@@ -24,7 +24,7 @@ public class SecurityFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        System.out.println("CHAMANDO FILTER");
+//        System.out.println("CHAMANDO FILTER");
         var tokenJWT = recuperarToken(request);
 
         if (tokenJWT != null) {
